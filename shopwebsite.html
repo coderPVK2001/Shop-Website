@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preeti Ladies Tailor - Ladies Dresses & Stitching Classes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.8;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 5rem 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: #667eea;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            text-align: center;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-card h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .gallery-item {
+            width: 100%;
+            height: 350px;
+            background: #f5f5f5;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 2rem auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 3rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: transform 0.3s;
+            width: 100%;
+        }
+
+        button:hover {
+            transform: translateY(-3px);
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        .contact-info {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .contact-info p {
+            margin: 0.5rem 0;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Preeti Ladies Tailor</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Welcome to Preeti Ladies Tailor</h1>
+        <p>Your Destination for Beautiful Dresses & Professional Stitching</p>
+        <a href="#contact" class="btn">Get in Touch</a>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service-card">
+                <h3>🎨 Ready-Made Dresses</h3>
+                <p>Explore our collection of beautiful, ready-to-wear ladies' dresses for every occasion. From casual wear to party outfits, we have it all.</p>
+            </div>
+            <div class="service-card">
+                <h3>✂️ Custom Stitching</h3>
+                <p>Get your dream outfit custom-stitched to perfection. Bring your design or choose from our catalog. Perfect fit guaranteed!</p>
+            </div>
+            <div class="service-card">
+                <h3>📚 Stitching Classes</h3>
+                <p>Learn the art of stitching from experienced professionals. Beginner to advanced courses available. Start your creative journey today!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Our Collection</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipMqpEtj2TXH0FcUZHhU4Hb8YLmhsjs64-PKlywI=s1360-w1360-h1020-rw" alt="Casual Wear">
+            </div>
+            <div class="gallery-item">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipMM50NsNIrv69XCV2cINPX9Q9qzjawFogoxFZUC=s1360-w1360-h1020-rw" alt="Party Dresses">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=500&h=500&fit=crop" alt="Traditional Outfits">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=500&h=500&fit=crop" alt="Western Collection">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=500&h=500&fit=crop" alt="Custom Designs">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1562157873-818bc0726f68?w=500&h=500&fit=crop" alt="Student Work">
+            </div>
+        </div>
+    </section>
+
+    <section id="classes">
+        <h2>Stitching Classes</h2>
+        <div class="services">
+            <div class="service-card">
+                <h3>Beginner Course</h3>
+                <p>Learn basic stitching, fabric selection, and simple garment construction. Perfect for those starting their journey.</p>
+            </div>
+            <div class="service-card">
+                <h3>Intermediate Course</h3>
+                <p>Master advanced techniques, pattern making, and complex designs. Take your skills to the next level.</p>
+            </div>
+            <div class="service-card">
+                <h3>Professional Course</h3>
+                <p>Comprehensive training for those wanting to start their own business or work professionally in the fashion industry.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p><strong>📞 Phone:</strong> +919768483839</p>
+            <p><strong>📧 Email:</strong> prajwalvkande2001@gmail.com</p>
+            <p><strong>📍 Address:</strong> Preeti collections J-156 opp.Shreeram Vidyalaya school Sec-3 Airoli Navi Mumbai 400708</p>
+            <p><strong>🕒 Hours:</strong> Mon-Sat: 09:00 AM - 9:00 PM</p>
+        </div>
+        
+<div class="contact-form">
+    <h3 style="text-align: center; margin-bottom: 1.5rem;">Send us a Message</h3>
+    <form action="https://formsubmit.co/demon001036@gmail.com" method="POST">
+        <!-- Hidden fields for FormSubmit -->
+        <input type="hidden" name="_subject" value="New Customer Inquiry from Elegant Threads">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        
+        <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" name="phone" placeholder="Enter your phone number" required>
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label>I'm Interested In</label>
+            <select name="interest" required>
+                <option>Ready-Made Dresses</option>
+                <option>Custom Stitching</option>
+                <option>Stitching Classes</option>
+                <option>General Inquiry</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Message</label>
+            <textarea name="message" placeholder="Tell us about your requirements" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Preeti Ladies Tailor. All rights reserved.</p>
+        <p>Crafted with love for fashion ❤️</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
