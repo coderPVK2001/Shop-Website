@@ -356,34 +356,31 @@
         <div class="contact-form">
             <h3 style="text-align: center; margin-bottom: 1.5rem;">Send us a Message</h3>
             
-            <!-- Netlify Form - Automatically saves data and sends emails -->
-            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-                <!-- Hidden field for Netlify -->
-                <input type="hidden" name="form-name" value="contact">
-                
-                <!-- Anti-spam field (hidden) -->
-                <p style="display: none;">
-                    <label>Don't fill this out: <input name="bot-field"></label>
-                </p>
+            <form action="https://formsubmit.co/prajwalvkande2001@gmail.com" method="POST">
+                <!-- FormSubmit Configuration -->
+                <input type="hidden" name="_subject" value="🔔 New Customer Inquiry - Preeti Ladies Tailor">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="https://preetiladiestailot.netlify.app/#contact">
                 
                 <div class="form-group">
                     <label>Your Name</label>
-                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="text" name="Name" placeholder="Enter your name" required>
                 </div>
                 
                 <div class="form-group">
                     <label>Phone Number</label>
-                    <input type="tel" name="phone" placeholder="Enter your phone number" required>
+                    <input type="tel" name="Phone" placeholder="Enter your phone number" required>
                 </div>
                 
                 <div class="form-group">
                     <label>Email</label>
-                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <input type="email" name="Email" placeholder="Enter your email" required>
                 </div>
                 
                 <div class="form-group">
                     <label>I'm Interested In</label>
-                    <select name="interest" required>
+                    <select name="Interest" required>
                         <option value="">Select an option</option>
                         <option>Ready-Made Dresses</option>
                         <option>Custom Stitching</option>
@@ -394,14 +391,10 @@
                 
                 <div class="form-group">
                     <label>Message</label>
-                    <textarea name="message" placeholder="Tell us about your requirements" required></textarea>
+                    <textarea name="Message" placeholder="Tell us about your requirements" required></textarea>
                 </div>
                 
                 <button type="submit">Send Message</button>
-                
-                <div class="success-message" id="successMessage">
-                    ✅ Thank you! We received your message and will contact you soon.
-                </div>
             </form>
         </div>
     </section>
