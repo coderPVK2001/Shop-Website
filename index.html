@@ -234,6 +234,56 @@
             font-size: 1.1rem;
         }
 
+        .quick-contact {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+            color: white;
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .whatsapp-btn {
+            background: #25D366;
+        }
+
+        .call-btn {
+            background: #007bff;
+        }
+
+        .map-btn {
+            background: #EA4335;
+        }
+
+        .map-container {
+            margin: 2rem 0;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+
         .success-message {
             display: none;
             background: #d4edda;
@@ -351,6 +401,26 @@
             <p><strong>📧 Email:</strong> prajwalvkande2001@gmail.com</p>
             <p><strong>📍 Address:</strong> Preeti collections J-156 opp.Shreeram Vidyalaya school Sec-3 Airoli Navi Mumbai 400708</p>
             <p><strong>🕒 Hours:</strong> Mon-Sat: 09:00 AM - 9:00 PM</p>
+            
+            <!-- Quick Contact Buttons -->
+            <div class="quick-contact">
+                <a href="https://wa.me/919768483839?text=Hi%2C%20I%20want%20to%20inquire%20about%20your%20services" class="contact-btn whatsapp-btn" target="_blank">
+                    💬 WhatsApp Us
+                </a>
+                <a href="tel:+919768483839" class="contact-btn call-btn">
+                    📞 Call Now
+                </a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Preeti+collections+J-156+Sec-3+Airoli+Navi+Mumbai" class="contact-btn map-btn" target="_blank">
+                    📍 Get Directions
+                </a>
+            </div>
+        </div>
+        
+        <!-- Google Map -->
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d356.7035676461246!2d72.99611227853002!3d19.156443320596104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!    
+           1s0x3be7bf4c55c504db%3A0x46c9cb57a7237846!2sPreeti%20Ladies%20Tailor!5e0!3m2!1sen!2sin!4v1777610479865!5m2!1sen!2sin" width="600" height="450" style="border:0;" 
+           allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         
         <div class="contact-form">
