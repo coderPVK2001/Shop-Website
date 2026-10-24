@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preeti Ladies Tailor - Diwali Collection, Gown from Saree, Stitching & Classes | Airoli, Navi Mumbai</title>
+    <meta name="description" content="Preeti Ladies Tailor, Airoli Navi Mumbai: expert ladies stitching, gowns stitched from your old or new saree, new dress materials, tops, Diwali collection and stitching classes at very affordable prices.">
+    <link rel="icon" type="image/x-icon" href="https://lh3.googleusercontent.com/DD1UxKoYJ4xqawcEpyTj0KAjnKESZaVG5_WpSO6Ov834T6PlDcBCAYKQ8sV4XToDPL5lEGGHrfTT-MdUsA=w1369">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>document.documentElement.classList.add('js');</script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="progress" id="progress"></div>
+
+    <!-- Scrolling announcements (edit messages in script.js) -->
+    <div class="announce"><div class="ticker" id="ticker"></div></div>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo2.png" alt="Preeti Ladies Tailor Logo"
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span class="logo-text">Preeti Ladies Tailor</span>
+            </div>
+
+            <div class="menu-toggle" id="menuToggle" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </div>
+
+            <ul id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#diwali">Diwali 🪔</a></li>
+                <li><a href="#collection">Collection</a></li>
+                <li><a href="#gown">Saree to Gown</a></li>
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section id="home" class="hero">
+        <div class="hero-inner">
+            <div class="status-pill js-status"></div>
+            <span class="diwali-badge">🪔 New Diwali Collection Is Here</span>
+            <h1>Preeti Ladies Tailor</h1>
+            <p class="sub">Expert stitching for all women's clothing &bull; Gowns from your saree &bull; New dress materials &amp; tops &bull; Stitching classes</p>
+            <p class="price-line">Celebrate this Diwali in style - <span>very affordable prices, visit our shop to see!</span></p>
+
+            <div id="countdownWrap">
+                <div class="countdown-title" id="countdownTitle"></div>
+                <div class="countdown">
+                    <div class="box"><span class="num" id="cdDays">00</span><span class="lbl">Days</span></div>
+                    <div class="box"><span class="num" id="cdHours">00</span><span class="lbl">Hours</span></div>
+                    <div class="box"><span class="num" id="cdMins">00</span><span class="lbl">Mins</span></div>
+                    <div class="box"><span class="num" id="cdSecs">00</span><span class="lbl">Secs</span></div>
+                </div>
+            </div>
+
+            <div class="hero-btns">
+                <a href="#collection" class="btn btn-gold">✨ See Our Collection</a>
+                <a href="https://wa.me/919768483839?text=Hi%2C%20I%20want%20to%20know%20about%20your%20Diwali%20collection" target="_blank" rel="noopener" class="btn btn-outline">💬 Chat on WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= DIWALI ================= -->
+    <div class="diwali-wrap on-dark full" id="diwali">
+        <div class="inner">
+            <div class="section-head reveal">
+                <h2>🪔 Diwali Collection 🪔</h2>
+                <div class="divider"></div>
+                <p>Fresh festive arrivals are now in our shop. Tap any card to see the latest photos - visit us soon, the best picks go fast!</p>
+            </div>
+
+            <div class="diwali-grid">
+                <a href="#collection" class="diwali-card reveal" data-filter="dresses">
+                    <div class="icon">👗</div>
+                    <h3>Ladies Dresses</h3>
+                    <p>Beautiful new dresses for puja, parties and family get-togethers.</p>
+                    <span class="tag">Very affordable</span>
+                    <span class="see-link">View photos →</span>
+                </a>
+                <a href="#collection" class="diwali-card reveal" data-filter="materials">
+                    <div class="icon">🧵</div>
+                    <h3>New Dress Materials</h3>
+                    <p>Fresh designs and colours in dress materials, ready for stitching.</p>
+                    <span class="tag">Very affordable</span>
+                    <span class="see-link">View photos →</span>
+                </a>
+                <a href="#collection" class="diwali-card reveal" data-filter="tops">
+                    <div class="icon">✨</div>
+                    <h3>Stylish Tops</h3>
+                    <p>Trendy tops for the festive season - easy to wear, easy on the pocket.</p>
+                    <span class="tag">Very affordable</span>
+                    <span class="see-link">View photos →</span>
+                </a>
+                <a href="#gown" class="diwali-card reveal">
+                    <div class="icon">👑</div>
+                    <h3>Gown from Your Saree</h3>
+                    <p>Bring an old or new saree - we will stitch a beautiful gown from it!</p>
+                    <span class="tag">Visit shop for price</span>
+                    <span class="see-link">Know more →</span>
+                </a>
+            </div>
+
+            <div class="diya-box reveal">
+                <h3>🪔 Light a Diya with Us</h3>
+                <p>Tap each diya to light it!</p>
+                <div class="diyas">
+                    <button class="diya" type="button" aria-label="Light diya 1"><span class="flame"></span><span class="bowl"></span></button>
+                    <button class="diya" type="button" aria-label="Light diya 2"><span class="flame"></span><span class="bowl"></span></button>
+                    <button class="diya" type="button" aria-label="Light diya 3"><span class="flame"></span><span class="bowl"></span></button>
+                    <button class="diya" type="button" aria-label="Light diya 4"><span class="flame"></span><span class="bowl"></span></button>
+                    <button class="diya" type="button" aria-label="Light diya 5"><span class="flame"></span><span class="bowl"></span></button>
+                </div>
+                <div class="diya-msg" id="diyaMsg">Tap the diyas to light them 🪔</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= SERVICES ================= -->
+    <section id="services">
+        <div class="section-head reveal">
+            <h2>What We Do</h2>
+            <div class="divider"></div>
+            <p>Stitching, new fabrics and learning - everything for your wardrobe in one place.</p>
+        </div>
+
+        <div class="cards">
+            <div class="service-card reveal">
+                <h3>🧵 Expert Stitching</h3>
+                <p><strong>We stitch all types of women's clothing:</strong></p>
+                <ul>
+                    <li>Blouses (all designs)</li>
+                    <li>Dress materials &amp; suits</li>
+                    <li>Gowns from old or new saree</li>
+                    <li>Tops &amp; kurtis</li>
+                    <li>Custom dresses for all occasions</li>
+                </ul>
+                <p><em>Quality tailoring with perfect fit guaranteed!</em></p>
+            </div>
+
+            <div class="service-card reveal">
+                <h3>🛍️ New Arrivals in Shop</h3>
+                <p><strong>Available at our shop:</strong></p>
+                <ul>
+                    <li>New dress materials</li>
+                    <li>Ladies dresses</li>
+                    <li>Stylish tops</li>
+                    <li>Party wear &amp; casual wear</li>
+                </ul>
+                <p><em>Very affordable prices, latest designs!</em></p>
+            </div>
+
+            <div class="service-card reveal">
+                <h3>🎓 Stitching Classes</h3>
+                <p><strong>Learn professional stitching:</strong></p>
+                <ul>
+                    <li>Beginner to advanced courses</li>
+                    <li>Blouse stitching techniques</li>
+                    <li>Pattern making &amp; designing</li>
+                    <li>Start your own tailoring business</li>
+                </ul>
+                <p><em>Expert guidance from experienced professionals!</em></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= COLLECTION (photo gallery) ================= -->
+    <section id="collection" style="padding-top:1rem;">
+        <div class="section-head reveal">
+            <h2>Our Collection</h2>
+            <div class="divider"></div>
+            <p>Our latest dresses, gowns, dress materials and tops. Tap any photo to zoom.</p>
+        </div>
+
+        <div class="filters" id="filters"></div>
+        <div class="gallery" id="gallery"></div>
+
+        <div class="gallery-foot">
+            <p>More new designs reach our shop every week. Want to see more?</p>
+            <a class="btn btn-green" target="_blank" rel="noopener" href="https://wa.me/919768483839?text=Hi%2C%20please%20share%20your%20latest%20collection%20photos">💬 Ask for Latest Photos on WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lb-btn lb-close" id="lbClose" aria-label="Close">×</button>
+        <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous">‹</button>
+        <img id="lbImg" src="" alt="">
+        <button class="lb-btn lb-next" id="lbNext" aria-label="Next">›</button>
+        <div class="lb-cap" id="lbCap"></div>
+    </div>
+
+    <!-- ================= SAREE TO GOWN ================= -->
+    <div class="gown-wrap full" id="gown">
+        <div class="inner">
+            <div class="gown-grid">
+
+                <!-- Before / After -->
+                <div class="reveal">
+                    <div class="ba" id="ba">
+                        <div class="ba-layer ba-before">
+                            <div class="ba-ph"><span class="big">🥻</span>Your old or new saree<small>Add photo: images/saree-before.jpg</small></div>
+                            <img src="images/saree-before.png" alt="Saree before stitching" onerror="this.remove()">
+                        </div>
+                        <div class="ba-layer ba-after" id="baAfter">
+                            <div class="ba-ph"><span class="big">👗</span>Beautiful new gown<small>Add photo: images/gown-after.jpg</small></div>
+                            <img src="images/gown-after.png" alt="Gown stitched from saree" onerror="this.remove()">
+                        </div>
+                        <span class="ba-label l">Saree</span>
+                        <span class="ba-label r">Gown</span>
+                        <div class="ba-line" id="baLine"></div>
+                        <input type="range" id="baRange" min="0" max="100" value="50" aria-label="Compare saree and gown">
+                    </div>
+                </div>
+
+                <!-- Text -->
+                <div class="gown-text reveal">
+                    <div class="gown-badge-logo">
+                        <img src="logo2.png" alt="Preeti Ladies Tailor" onerror="this.style.display='none'">
+                    </div>
+                    <h3>Your Saree, Our Stitching - A Beautiful Gown!</h3>
+                    <p>Have an <strong>old or used saree</strong> lying in your cupboard, or bought a <strong>new saree</strong> you would love as a gown? Bring it to us. We will stitch a beautiful gown from it at an affordable price.</p>
+                    <ol class="steps">
+                        <li><strong>Bring your saree</strong> - old, used or brand new.</li>
+                        <li><strong>Choose a design</strong> - show us your idea or pick from our designs.</li>
+                        <li><strong>Perfect measurements</strong> - we stitch it for a perfect fit.</li>
+                        <li><strong>Collect your gown</strong> and shine at the function!</li>
+                    </ol>
+                    <a class="btn btn-green" target="_blank" rel="noopener"
+                       href="https://wa.me/919768483839?text=Hi%2C%20I%20want%20a%20gown%20stitched%20from%20my%20saree.%20Please%20share%20details.">💬 Ask About Saree to Gown</a>
+                    <p style="margin-top:0.9rem; font-size:0.9rem; color:#6b5a3a;">Prices are very affordable - you will get the exact price when you visit our shop.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= CLASSES ================= -->
+    <section id="classes">
+        <div class="section-head reveal">
+            <h2>Stitching Classes</h2>
+            <div class="divider"></div>
+            <p>Learn a skill for life - or turn it into your own business.</p>
+        </div>
+        <div class="cards">
+            <div class="service-card reveal">
+                <h3>Beginner Course</h3>
+                <p>Learn basic stitching, fabric selection and simple garment construction. Perfect for those starting their journey.</p>
+            </div>
+            <div class="service-card reveal">
+                <h3>Intermediate Course</h3>
+                <p>Master advanced techniques, pattern making and complex designs. Take your skills to the next level.</p>
+            </div>
+            <div class="service-card reveal">
+                <h3>Professional Course</h3>
+                <p>Comprehensive training for those wanting to start their own business or work professionally in fashion.</p>
+            </div>
+        </div>
+        <div style="text-align:center; margin-top:2.2rem;" class="reveal">
+            <a class="btn btn-dark" target="_blank" rel="noopener" href="https://wa.me/919768483839?text=Hi%2C%20I%20want%20to%20join%20stitching%20classes.%20Please%20share%20batch%20details.">🎓 Enquire About Classes</a>
+        </div>
+    </section>
+
+    <!-- ================= QUICK ENQUIRY ================= -->
+    <div class="enquiry full">
+        <div class="enq-box reveal">
+            <h2>Quick Enquiry on WhatsApp</h2>
+            <p>Select what you are looking for, add your name and send - we reply personally.</p>
+            <div class="chips">
+                <button type="button" class="chip" data-v="Diwali collection">🪔 Diwali Collection</button>
+                <button type="button" class="chip" data-v="Stitching">🧵 Stitching</button>
+                <button type="button" class="chip" data-v="Gown from saree">👑 Gown from Saree</button>
+                <button type="button" class="chip" data-v="Dress materials / tops">🛍️ Materials &amp; Tops</button>
+                <button type="button" class="chip" data-v="Stitching classes">🎓 Classes</button>
+            </div>
+            <input type="text" id="enqName" placeholder="Your name (optional)">
+            <br>
+            <button type="button" class="btn btn-green" id="enqSend">💬 Send on WhatsApp</button>
+            <div class="enq-hint">This opens WhatsApp with your message ready to send.</div>
+        </div>
+    </div>
+
+    <!-- ================= FAQ ================= -->
+    <section id="faq">
+        <div class="section-head reveal">
+            <h2>Common Questions</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="faq reveal">
+            <details>
+                <summary>Can you stitch a gown from my old saree?</summary>
+                <p>Yes! Bring your old, used or brand new saree and we will stitch a beautiful gown from it at an affordable price.</p>
+            </details>
+            <details>
+                <summary>What do you stitch?</summary>
+                <p>We stitch all women's clothing - blouses, dress materials, suits, gowns, tops, kurtis and custom dresses, with a perfect fit guaranteed.</p>
+            </details>
+            <details>
+                <summary>What can I buy at your shop?</summary>
+                <p>New dress materials, ladies dresses and stylish tops. Our Diwali collection has just arrived - visit us to see it.</p>
+            </details>
+            <details>
+                <summary>What are your prices?</summary>
+                <p>Our prices start at a very affordable range. Visit our shop to know the exact price for what you need.</p>
+            </details>
+            <details>
+                <summary>Do you run stitching classes?</summary>
+                <p>Yes - beginner, intermediate and professional courses. Message us on WhatsApp or visit the shop for batch details.</p>
+            </details>
+            <details>
+                <summary>Where is the shop and what are the timings?</summary>
+                <p>Preeti Collections, J-156, opp. Shreeram Vidyalaya School, Sector 3, Airoli, Navi Mumbai 400708. Open Monday to Saturday, 9:00 AM to 9:00 PM.</p>
+            </details>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" style="padding-top:1rem;">
+        <div class="section-head reveal">
+            <h2>Visit Us / Contact</h2>
+            <div class="divider"></div>
+            <p class="js-status" style="font-weight:600; color:#5a0f1e;"></p>
+        </div>
+
+        <div class="contact-info reveal">
+            <p><strong>📞 Phone:</strong> +919768483839</p>
+            <p><strong>📧 Email:</strong> prajwalvkande2001@gmail.com</p>
+            <p><strong>📍 Address:</strong> Preeti collections J-156 opp.Shreeram Vidyalaya school Sec-3 Airoli Navi Mumbai 400708</p>
+            <p><strong>🕒 Hours:</strong> Mon-Sat: 09:00 AM - 9:00 PM</p>
+
+            <div class="quick-contact">
+                <a href="https://wa.me/919768483839?text=Hi%2C%20I%20want%20to%20inquire%20about%20your%20services" class="contact-btn whatsapp-btn" target="_blank" rel="noopener">💬 WhatsApp Us</a>
+                <a href="tel:+919768483839" class="contact-btn call-btn">📞 Call Now</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Preeti+Ladies+Tailor+Airoli+Navi+Mumbai" class="contact-btn map-btn" target="_blank" rel="noopener">📍 Get Directions</a>
+            </div>
+        </div>
+
+        <!-- Google Map (exact shop location) -->
+        <div class="map-container reveal">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d471.11074423486497!2d72.99599306833719!3d19.156468815052982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bf4c55c504db%3A0x46c9cb57a7237846!2sPreeti%20Ladies%20Tailor!5e0!3m2!1sen!2sin!4v1792862912302!5m2!1sen!2sin"
+                    title="Preeti Ladies Tailor location map"
+                    allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+
+        <div class="contact-form reveal">
+            <h3>Send us a Message</h3>
+
+            <form action="https://formsubmit.co/prajwalvkande2001@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="🔔 New Customer Inquiry - Preeti Ladies Tailor">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_autoresponse" value="Thank you! We received your message and will contact you soon.">
+
+                <div class="form-group">
+                    <label>Your Name</label>
+                    <input type="text" name="Name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" name="Phone" placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="Email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label>I'm Interested In</label>
+                    <select name="Interest" required>
+                        <option value="">Select an option</option>
+                        <option>Diwali Collection</option>
+                        <option>Custom Stitching</option>
+                        <option>Gown from Saree</option>
+                        <option>Dress Materials / Tops</option>
+                        <option>Stitching Classes</option>
+                        <option>General Inquiry</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea name="Message" placeholder="Tell us about your requirements" required></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="brand">🪔 Preeti Ladies Tailor 🪔</div>
+        <p>Wishing you and your family a very Happy &amp; Prosperous Diwali!</p>
+        <p style="margin-top:0.6rem;">&copy; 2026 Preeti Ladies Tailor. All rights reserved.</p>
+    </footer>
+
+    <a href="https://wa.me/919768483839?text=Hi%2C%20I%20want%20to%20inquire%20about%20your%20services" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
+    <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
